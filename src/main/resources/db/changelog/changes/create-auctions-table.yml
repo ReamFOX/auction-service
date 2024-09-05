@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-auctions-table
+      author: Oleksandr Farion
+      changes:
+        - createTable:
+            tableName: auctions
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
